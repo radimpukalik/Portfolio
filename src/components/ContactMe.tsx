@@ -52,7 +52,7 @@ const ContactMe: FC = () => {
           <div className="contact-form-recaptcha">
             <ReCAPTCHA
               key={recaptchaKey}
-              sitekey="6Ld9kGUpAAAAAMDHFRaO2k3zCHgNkSJIb8771dUW"
+              sitekey="6LeZ7mspAAAAAOt_y45pxGeA1igJF4i1dqKwld4I"
               onChange={(val) => setCapVal(val)}
             />
           </div>
