@@ -1,0 +1,249 @@
+@import 'config';
+@import './Navbar';
+@import './MobileNav';
+@import './MainPage';
+@import './AboutMe';
+@import './Skills';
+@import './Projects';
+@import './ContactMe';
+@import './Footer';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: $primary;
+    padding-top: 10dvh;
+    min-width: 380px;
+}
+
+section {
+    @include flexCenter;
+    padding: 5em 0em;
+    width: 100%;
+    background-color: $primary;
+}
+
+h3 {
+    border-bottom: 0.1em solid $text;
+    color: $text;
+    padding: 0.3em 0.5em;
+    border-radius: 0.5em;
+    font-size: 4em;
+}
+
+.particle-test{
+    background-color: red;
+    width: 50rem;
+    height: 50rem;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(83, 85, 84);
+}
+
+body::-webkit-scrollbar-track {
+    background-color: $primary;
+}
+@media (max-width: 1600px) {
+    section {
+        padding: 2.5em 3em;
+    }
+}
+
+@media (max-width: 1350px) {
+    .project-item-left-laptop, .project-item-left-mobile{
+        font-size: 1.3em;
+    }
+    .project-item-right-text{
+        font-size: 1em;
+    }
+    .about-content-text-text{
+        width: 25em;
+    }
+    .menu-nav{
+        gap: 1em;
+    }
+    .nav{
+        padding: 0 3em;
+    }
+}
+
+@media (max-width: 1150px){
+    .nav{
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 1100px) {
+    h3{
+        font-size: 3em;
+    }
+    section {
+        padding: 2.5em 3em;
+    }
+    .project-item-left-laptop, .project-item-left-mobile{
+        font-size: 1em;
+    }
+    .project-item-right-header{
+        font-size: 2em;
+    }
+    .project-item-right-languages-item{
+        font-size:  0.6em;
+    }
+    .project-item-right-text{
+        font-size: 0.8em;
+    }
+    .project-item-right-hyperlink{
+        border-top: 0.2em solid $primary;
+    }
+    .project-item-right-hyperlink-item{
+        font-size: 0.8em;
+    }
+    .about-content{
+        flex-direction: column;
+    }
+    .about-content-text{
+        padding-right: 0;
+        padding-top: 5em;
+        order: 2;
+    }
+    h1{
+        font-size: 5em;
+    }
+    h2{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 900px){
+    .project-container{
+        gap: 2em;
+    }
+    .project-item{
+        flex-direction: column;
+    }
+    .project-item-left{
+        order: 2;
+        font-size: 1.3em;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 2.5em;
+        border-top-right-radius: 0em;
+        border-bottom-right-radius: 2.5em;
+    }   
+    .project-item-right{
+        font-size: 1.3em;
+        border-top-left-radius: 2.5em;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 2.5em;
+        border-bottom-right-radius: 0em;
+    }
+    .skill-list{
+        gap: 2em;
+    }  
+    h1{
+        font-size: 4em;
+    }
+    h2{
+        font-size: 2em;
+    }
+    .nav{
+        padding: 0 1.5em;
+        font-size: 0.9em;
+    }
+    .menu-nav-item{
+        font-size: 1.1em;
+    }
+}
+@media (max-width: 650px){
+    .skill-list{
+        font-size: 0.8em;
+    }
+    .contact-form-bottom{
+        height: 12em;
+    }
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    h3{
+        font-size: 2.5em;
+    }
+    section {
+        padding: 2.5em 2em;
+    }
+    .contact-form-top{
+        flex-direction: column;
+        gap: 1em;
+    }
+    .project-item-left{
+        font-size: 1em;
+    }   
+    .project-item-right{
+        font-size: 1;
+    }  
+    .project-container{
+        gap: 1.5em;
+    }
+    .project-item-right-header{
+        font-size: 1.6em;
+    }
+    .project-item-right-languages-item{
+        font-size:  0.6em;
+    }
+    .project-item-right-text{
+        font-size: 0.7em;
+    }
+    .project-item-right-hyperlink{
+        border-top: 0.2em solid $primary;
+    }
+    .project-item-right-hyperlink-item{
+        font-size: 0.6em;
+    }
+    .contact-form-bottom{
+        height: 10em;
+    }
+    .about-content{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 500px){
+    h3{
+        font-size: 2em;
+    }
+    .skill-list{
+        gap: 2em;
+    } 
+    .project-item-left-laptop, .project-item-left-mobile{
+        font-size: 0.8em;
+    } 
+    section {
+        padding: 2.5em 1em;
+    }
+    .about-content{
+        font-size: 0.6em;
+    }
+    h1{
+        font-size: 2.8em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 400px) {
+}

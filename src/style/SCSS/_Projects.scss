@@ -1,0 +1,141 @@
+@import 'config';
+
+.picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project {
+    @include flexCenter;
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 3em;
+
+        &-grid {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &-item {
+        display: flex;
+        width: 100%;
+        max-width: 100em;
+
+        &-left{
+            width: 100%;
+            padding: 1em;
+            border: 1em solid $secondary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 5em;
+            border-bottom-left-radius: 5em;
+
+            &-laptop{
+                font-size: 1.8em;
+                width: 16em;
+                height: 9em;
+                border: 0.2em solid black;
+                border-radius: 0.1em;
+            }
+
+            &-mobile{
+                font-size: 1.8em;
+                width: 4em;
+                height: 8em;
+                border: 0.2em solid black;
+                border-radius: 0.1em;
+                margin-left: 0.5em;
+            }
+
+            &-new-left{
+                order: 2;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 5em;
+                border-bottom-right-radius: 5em;
+                border-left: none;
+            }
+        }
+
+        &-right{
+            background-color: $secondary;
+            padding: 1em;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            border-top-right-radius: 5em;
+            border-bottom-right-radius: 5em;
+            border-left: none;
+            gap: 1em;
+            
+            &-header{
+                font-size: 3em;
+                flex: 1;
+            }
+
+            &-languages{
+                font-size: 1.1em;
+                flex: 1;
+                @include flexCenter;
+                gap: 1.5em;
+                    
+                &-item{
+                    background-color: $accent;
+                    color: black;
+                    padding: 0.2em 1em;
+                    border-radius: 0.5em;
+                }   
+            }
+
+            &-text{
+                font-size: 1.3em;
+                padding: 0 1.5em;
+                flex: 2;
+                @include flexCenter;
+                text-align: center;
+                color: $text;
+            }
+
+            &-hyperlink{
+                font-size: 1.2em;
+                flex: 1;
+                @include flexCenter;
+                gap: 2em;
+                border-top: 0.3em solid $primary;
+                padding-top: 0.5em;
+
+                &-item{
+                    background-color: $primary;
+                    color: $text;
+                    padding: 0.2em 1em;
+                    border-radius: 0.5em;
+                    font-weight: bold;
+                    text-decoration: none;
+                    transition: transform 0.3s ease-in-out;
+
+                    &:hover {
+                        color: $accent;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            &-new-right{
+                border-top-left-radius: 5em;
+                border-bottom-left-radius: 5em;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                padding-left: 1em;
+            }
+        }
+    }
+
+}

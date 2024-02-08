@@ -1,0 +1,10 @@
+$primary: #121212;
+$secondary: #242524;
+$text: rgb(193, 194, 193);
+$accent: #E0CCBE;
+
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

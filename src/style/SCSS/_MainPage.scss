@@ -1,0 +1,40 @@
+@import 'config';
+
+h1 {
+    font-size: 7em;
+    color: $text;
+    text-align: center;
+    border-bottom: 1px solid $text;
+    padding: 0 0.5em ;
+}
+
+h2 {
+    font-size: 3em;
+    color: $text;
+    text-align: center;
+}
+
+.home-name-last{
+    color: white;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 90dvh;
+    padding-bottom: 15dvh;
+
+    &-main-section{
+        z-index: 5;
+    }
+
+    &-social-icons{
+        @include flexCenter;
+        padding-top: 1rem;
+        gap: 1rem;
+        text-decoration: none;
+    }
+
+}

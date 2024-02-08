@@ -1,0 +1,39 @@
+@import 'config';
+
+.skill {
+    &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        list-style-type: none;
+
+        &-header{
+            margin-bottom: 1em;
+        }
+    }
+
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3em;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &-item {
+        text-decoration: none;
+        background-color: $secondary;
+        width: 10em;
+        height: 10em;
+        border-radius: 5em;
+        @include flexCenter;
+    }
+}

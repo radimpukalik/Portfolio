@@ -1,0 +1,54 @@
+@import 'config';
+
+.nav {
+    font-size: 1.5rem;
+    border-bottom: 1px solid $text;
+    background-color: $secondary;
+    color: $text;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10dvh;
+    padding: 0 5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    &-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-item{
+            @include flexCenter;
+            padding: 0.5em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+    }
+}
+
+.menu-nav{
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+    &-item{
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            color: $accent;
+            transform: scale(1.05);
+        }
+    }
+}
+
+.hamburger-menu {
+    @include flexCenter;
+}
+

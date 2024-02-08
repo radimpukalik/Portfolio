@@ -1,0 +1,21 @@
+.mobile-nav{
+    height: 90dvh;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+
+    &-item{
+        font-size: 2em;
+        margin-bottom: 1em;
+        padding: 0.5em;
+        border-bottom: 1px solid $text;
+        width: 100%;
+        @include flexCenter;
+        color: white;
+        background-color: $secondary;
+    }
+
+}
