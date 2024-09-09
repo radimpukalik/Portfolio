@@ -11,7 +11,7 @@ const MainPage: FC = () => {
           <h1>
             Radim <span className="home-name-last">Pukalík</span>
           </h1>
-          <h2>Junior front-end developer</h2>
+          <h2>Junior React Developer</h2>
           <div className="home-social-icons">
             <a href="https://github.com/radimpukalik/">
               <FaGithub color={`rgb(193, 194, 193)`} size={30} />

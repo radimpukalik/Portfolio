@@ -1,11 +1,12 @@
 import { FC } from "react";
-import { FaReact } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
+import { FaPython, FaReact } from "react-icons/fa";
+import { SiCplusplus, SiCsharp, SiMysql, SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { TfiHtml5 } from "react-icons/tfi";
 import { DiCss3 } from "react-icons/di";
 import { SiSass } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa6";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 const Skills: FC = () => {
   return (
@@ -32,7 +33,22 @@ const Skills: FC = () => {
             <SiSass size={70} color="#CD6799" />
           </li>
           <li className="skill-item">
+            <RiTailwindCssFill size={70} color="#38bdf8" />
+          </li>
+          <li className="skill-item">
             <FaGitAlt size={80} color="#f34f29" />
+          </li>
+          <li className="skill-item">
+            <FaPython size={80} color="#306998" />
+          </li>
+          <li className="skill-item">
+            <SiCsharp size={70} color="#9B4F96" />
+          </li>
+          <li className="skill-item">
+            <SiCplusplus size={70} color="#00599C" />
+          </li>
+          <li className="skill-item">
+            <SiMysql size={80} color="#F29111" />
           </li>
         </ul>
       </div>

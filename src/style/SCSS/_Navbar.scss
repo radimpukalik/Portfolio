@@ -3,7 +3,7 @@
 .nav {
     font-size: 1.5rem;
     border-bottom: 1px solid $text;
-    background-color: $secondary;
+    background-color: rgba($secondary, 0.75);
     color: $text;
     font-weight: bold;
     display: flex;
@@ -16,6 +16,7 @@
     left: 0;
     right: 0;
     z-index: 100;
+    backdrop-filter: blur(18px) brightness(0.9) contrast(1.2);
 
     &-left{
         display: flex;
