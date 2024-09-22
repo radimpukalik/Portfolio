@@ -12,17 +12,20 @@ const App: FC = () => {
 
   return (
     <>
-      <Navbar isMobileNavOn={isMobileNavOn} setIsMobileNavOn={setIsMobileNavOn} />
+      <Navbar
+        isMobileNavOn={isMobileNavOn}
+        setIsMobileNavOn={setIsMobileNavOn}
+      />
       {!isMobileNavOn && (
-        <>
+        <div className="container">
           <MainPage />
           <AboutMe />
           <Skills />
           <Projects />
           <ContactMe />
-          <Footer />
-        </>
+        </div>
       )}
+      <Footer />
     </>
   );
 };

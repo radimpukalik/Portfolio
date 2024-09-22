@@ -107,18 +107,25 @@ const Navbar: FC<Props> = ({ isMobileNavOn, setIsMobileNavOn }) => {
               <a onClick={() => smoothScroll("projects")}>{"<Projects />"}</a>
             </li>
             <li className="menu-nav-item">
-              <a onClick={() => smoothScroll("contactme")}>{"<Contact me />"}</a>
+              <a onClick={() => smoothScroll("contactme")}>
+                {"<Contact me />"}
+              </a>
             </li>
           </ul>
         )}
 
         {windowWidth < 650 && (
-          <div onClick={() => setIsMobileNavOn((prev) => !prev)} className="hamburger-menu">
+          <div
+            onClick={() => setIsMobileNavOn((prev) => !prev)}
+            className="hamburger-menu"
+          >
             <GiHamburgerMenu size={35} />
           </div>
         )}
       </nav>
-      {isMobileNavOn && <MobileNav handleMobileNavClick={handleMobileNavClick} />}
+      {isMobileNavOn && (
+        <MobileNav handleMobileNavClick={handleMobileNavClick} />
+      )}
     </>
   );
 };

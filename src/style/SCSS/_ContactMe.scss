@@ -1,5 +1,6 @@
 @import 'config';
 
+
 .contact {
     @include flexCenter;
     flex-direction: column;
@@ -8,6 +9,12 @@
 
     label {
         font-size: 1.3em;
+    }
+
+    p {
+        color: #DC143C !important; 
+        font-size: 1em;
+        margin-top: 0.5em;
     }
 
     &-header{

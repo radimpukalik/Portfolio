@@ -338,6 +338,11 @@ h2 {
 .contact label {
   font-size: 1.3em;
 }
+.contact p {
+  color: #DC143C !important;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
 .contact-header {
   margin-bottom: 0.8em;
 }
@@ -427,6 +432,14 @@ body {
   background-color: #121212;
   padding-top: 10dvh;
   min-width: 380px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 section {
